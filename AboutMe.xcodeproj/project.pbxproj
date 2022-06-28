@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		AC7F0BF028673C3E0080A755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F0BEF28673C3E0080A755 /* AppDelegate.swift */; };
 		AC7F0BF228673C3E0080A755 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F0BF128673C3E0080A755 /* SceneDelegate.swift */; };
-		AC7F0BF428673C3E0080A755 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F0BF328673C3E0080A755 /* ViewController.swift */; };
+		AC7F0BF428673C3E0080A755 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F0BF328673C3E0080A755 /* LoginViewController.swift */; };
 		AC7F0BF728673C3E0080A755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7F0BF528673C3E0080A755 /* Main.storyboard */; };
 		AC7F0BF928673C400080A755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7F0BF828673C400080A755 /* Assets.xcassets */; };
 		AC7F0BFC28673C400080A755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7F0BFA28673C400080A755 /* LaunchScreen.storyboard */; };
+		AC7F0C0428673D930080A755 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F0C0328673D930080A755 /* WelcomeViewController.swift */; };
+		AC7F0C102867422E0080A755 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F0C0F2867422E0080A755 /* User.swift */; };
+		AC7F0C16286759560080A755 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F0C15286759560080A755 /* InformationViewController.swift */; };
+		AC7F0C18286759670080A755 /* MoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F0C17286759670080A755 /* MoreInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC7F0BEC28673C3E0080A755 /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7F0BEF28673C3E0080A755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC7F0BF128673C3E0080A755 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC7F0BF328673C3E0080A755 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC7F0BF328673C3E0080A755 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AC7F0BF628673C3E0080A755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC7F0BF828673C400080A755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC7F0BFB28673C400080A755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC7F0BFD28673C400080A755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7F0C0328673D930080A755 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		AC7F0C0F2867422E0080A755 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AC7F0C15286759560080A755 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		AC7F0C17286759670080A755 /* MoreInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		AC7F0BEE28673C3E0080A755 /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
-				AC7F0BEF28673C3E0080A755 /* AppDelegate.swift */,
-				AC7F0BF128673C3E0080A755 /* SceneDelegate.swift */,
-				AC7F0BF328673C3E0080A755 /* ViewController.swift */,
-				AC7F0BF528673C3E0080A755 /* Main.storyboard */,
-				AC7F0BF828673C400080A755 /* Assets.xcassets */,
-				AC7F0BFA28673C400080A755 /* LaunchScreen.storyboard */,
-				AC7F0BFD28673C400080A755 /* Info.plist */,
+				AC7F0C122867423D0080A755 /* Models */,
+				AC7F0C0C2867410A0080A755 /* ViewControllers */,
+				AC7F0C0B286740FE0080A755 /* StoryBoards */,
+				AC7F0C0D2867411C0080A755 /* Resources */,
+				AC7F0C0E2867412C0080A755 /* App */,
 			);
 			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		AC7F0C0B286740FE0080A755 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				AC7F0BF528673C3E0080A755 /* Main.storyboard */,
+				AC7F0BFA28673C400080A755 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		AC7F0C0C2867410A0080A755 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC7F0BF328673C3E0080A755 /* LoginViewController.swift */,
+				AC7F0C0328673D930080A755 /* WelcomeViewController.swift */,
+				AC7F0C15286759560080A755 /* InformationViewController.swift */,
+				AC7F0C17286759670080A755 /* MoreInformationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AC7F0C0D2867411C0080A755 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC7F0BF828673C400080A755 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC7F0C0E2867412C0080A755 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AC7F0BEF28673C3E0080A755 /* AppDelegate.swift */,
+				AC7F0BF128673C3E0080A755 /* SceneDelegate.swift */,
+				AC7F0BFD28673C400080A755 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AC7F0C122867423D0080A755 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC7F0C0F2867422E0080A755 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC7F0BF428673C3E0080A755 /* ViewController.swift in Sources */,
+				AC7F0C102867422E0080A755 /* User.swift in Sources */,
+				AC7F0BF428673C3E0080A755 /* LoginViewController.swift in Sources */,
+				AC7F0C16286759560080A755 /* InformationViewController.swift in Sources */,
+				AC7F0C0428673D930080A755 /* WelcomeViewController.swift in Sources */,
 				AC7F0BF028673C3E0080A755 /* AppDelegate.swift in Sources */,
+				AC7F0C18286759670080A755 /* MoreInformationViewController.swift in Sources */,
 				AC7F0BF228673C3E0080A755 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96Y74JRW93;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = AboutMe/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96Y74JRW93;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = AboutMe/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
