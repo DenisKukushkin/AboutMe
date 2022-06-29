@@ -36,6 +36,8 @@ class InformationViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         profileImage.image = UIImage(named: user.person.profileImage)
         profileImage.layer.cornerRadius = profileImage.bounds.width / 2
+        profileImage.layer.borderColor = UIColor.orange.cgColor
+        profileImage.layer.borderWidth = 0.5
     }
     
     internal override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
